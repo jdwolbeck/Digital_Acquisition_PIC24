@@ -5,12 +5,18 @@
 #include <stdbool.h>
 
 void Int0_init(void);
+void LedRed_On(void);
+void LedRed_Off(void);
 void toggle_LedRed(void);
-bool LedRed_Status(void);
+void LedRed_Status(void);
+void LedYellow_On(void);
+void LedYellow_Off(void);
 void toggle_LedYellow(void);
-bool LedYellow_Status(void);
+void LedYellow_Status(void);
+void LedGreen_On(void);
+void LedGreen_Off(void);
 void toggle_LedGreen(void);
-bool LedGreen_Status(void);
+void LedGreen_Status(void);
 
 
 #endif	/* XC_LED_H */

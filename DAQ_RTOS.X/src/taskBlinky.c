@@ -50,6 +50,7 @@ static portTASK_FUNCTION(vBlinkyTask, pvParameters)
     while(1)
     {
         vTaskDelay(wait_ms);
-        toggle_LedGreen();
+        if(pwm_enable)
+            toggle_LedGreen();
     }
 }

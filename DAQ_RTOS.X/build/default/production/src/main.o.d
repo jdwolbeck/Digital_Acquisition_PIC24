@@ -18,5 +18,6 @@ src/FreeRTOSConfig.h  \
  src/taskHeartbeat.h  \
 src/taskBlinky.h  \
 src/taskUart.h  \
-src/led.h  \
- src/initialization.h 
+src/taskTimer.h  \
+ src/led.h  \
+src/initialization.h 

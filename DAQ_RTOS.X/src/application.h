@@ -7,6 +7,7 @@ extern "C" {
 
     extern void execute_command(void);
     extern void execute_number(void);
+    extern void uart_print(char[], int);
 
 #ifdef	__cplusplus
 }

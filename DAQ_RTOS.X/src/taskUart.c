@@ -69,7 +69,7 @@ static portTASK_FUNCTION(vUartTask, pvParameters)
     while(1)
     {
         if(RXread != '_')
-        {    
+        {
             switch(RXread)
             {
                 case '#':
@@ -77,6 +77,9 @@ static portTASK_FUNCTION(vUartTask, pvParameters)
                         execute_number();
                     else
                         execute_command();
+                    break;
+                case '-':
+                    execute_command();
                     break;
                 default:
                     tempstr[0] = RXread;

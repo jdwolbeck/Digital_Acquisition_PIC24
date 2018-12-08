@@ -15,6 +15,7 @@
 #include "taskHeartbeat.h"
 #include "taskBlinky.h"
 #include "taskUart.h"
+#include "taskTimer.h"
 #include "led.h"
 
 #include "initialization.h"
@@ -41,8 +42,10 @@
 //Global variables
 int btnCount = 0;       
 char RXread = '_';     
-int wait_ms = 500;      
+int wait_ms = 500;  
+int t_count = 0;
 bool number_input = false;
+bool pwm_enable = false;
 char command_string[20];
 int main( void )
 {
@@ -62,7 +65,7 @@ int main( void )
     //    Application Task initialization
     //=========================================================================
     taskBlinky_init();
-    //taskHeartbeat_Init(mainNUM_FLASH_COROUTINES);
+    taskTimer_init();
     taskUart_init();
     Int0_init();
 

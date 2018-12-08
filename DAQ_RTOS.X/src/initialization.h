@@ -7,6 +7,7 @@ extern "C" {
 
     extern void App_init(void);
     extern void Gpio_init(void);
+    extern void Adc_init(void);
 
 
 #ifdef	__cplusplus

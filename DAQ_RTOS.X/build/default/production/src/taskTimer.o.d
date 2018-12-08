@@ -13,4 +13,6 @@ FreeRTOS/Source/task.h  \
 FreeRTOS/Source/list.h  \
  FreeRTOS/Source/task.h  \
 src/taskTimer.h  \
+src/global.h  \
+src/led.h  \
  src/../mcc_generated_files/pin_manager.h 

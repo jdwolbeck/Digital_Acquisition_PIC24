@@ -10,14 +10,50 @@ void Int0_init(void)
     IEC0bits.INT0IE = 1;        //Enable Interrupt 0
 }
 
+void LedRed_On(void)
+{
+    LATBbits.LATB15 = 1;
+}
+
+void LedRed_Off(void)
+{
+    LATBbits.LATB15 = 0;
+}
+
 void toggle_LedRed(void)
 {
     LATBbits.LATB15 = ~LATBbits.LATB15;
 }
 
-bool LedRed_Status()
+void LedRed_Status(void)
 {
-    return LATBbits.LATB15;
+    if(LATBbits.LATB15)
+    {
+        Nop();
+        U1TXREG = 'R';
+        U1TXREG = '_';
+        U1TXREG = 'O';
+        U1TXREG = 'N';
+    }
+    else
+    {
+        Nop();
+        U1TXREG = 'R';
+        U1TXREG = '_';
+        U1TXREG = 'O';
+        U1TXREG = 'F';
+        U1TXREG = 'F';
+    }
+}
+
+void LedYellow_On(void)
+{
+    LATBbits.LATB14 = 1;
+}
+
+void LedYellow_Off(void)
+{
+    LATBbits.LATB14 = 0;
 }
 
 void toggle_LedYellow(void)
@@ -25,9 +61,35 @@ void toggle_LedYellow(void)
     LATBbits.LATB14 = ~LATBbits.LATB14;
 }
 
-bool LedYellow_Status()
+void LedYellow_Status(void)
 {
-    return LATBbits.LATB14;
+    if(LATBbits.LATB14)
+    {
+        Nop();
+        U1TXREG = 'Y';
+        U1TXREG = '_';
+        U1TXREG = 'O';
+        U1TXREG = 'N';
+    }
+    else
+    {
+        Nop();
+        U1TXREG = 'Y';
+        U1TXREG = '_';
+        U1TXREG = 'O';
+        U1TXREG = 'F';
+        U1TXREG = 'F';
+    }
+}
+
+void LedGreen_On(void)
+{
+    LATBbits.LATB13 = 1;
+}
+
+void LedGreen_Off(void)
+{
+    LATBbits.LATB13 = 0;
 }
 
 void toggle_LedGreen(void)
@@ -35,7 +97,24 @@ void toggle_LedGreen(void)
     LATBbits.LATB13 = ~LATBbits.LATB13;
 }
 
-bool LedGreen_Status()
+void LedGreen_Status()
 {
-    return LATBbits.LATB13;
+    if(LATBbits.LATB13)
+    {
+        Nop();
+        U1TXREG = 'G';
+        U1TXREG = '_';
+        U1TXREG = 'O';
+        U1TXREG = 'N';
+    }
+    else
+    {
+        Nop();
+        Nop();
+        U1TXREG = 'G';
+        U1TXREG = '_';
+        U1TXREG = 'O';
+        U1TXREG = 'F';
+        U1TXREG = 'F';
+    }
 }
