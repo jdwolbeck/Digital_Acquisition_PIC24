@@ -5,7 +5,10 @@
         <group>
             <file>file:/E:/Projects/ECE%20422/Digital_Acquisition_PIC24-master/DAQ_RTOS.X/src/main.c</file>
             <file>file:/E:/Projects/ECE%20422/Digital_Acquisition_PIC24-master/DAQ_RTOS.X/src/taskUart.c</file>
+            <file>file:/E:/Projects/ECE%20422/Digital_Acquisition_PIC24-master/DAQ_RTOS.X/src/taskTimer.c</file>
             <file>file:/E:/Projects/ECE%20422/Digital_Acquisition_PIC24-master/DAQ_RTOS.X/src/application.c</file>
+            <file>file:/E:/Projects/ECE%20422/Digital_Acquisition_PIC24-master/DAQ_RTOS.X/src/global.h</file>
+            <file>file:/E:/Projects/ECE%20422/Digital_Acquisition_PIC24-master/DAQ_RTOS.X/src/led.c</file>
             <file>file:/E:/Projects/ECE%20422/Digital_Acquisition_PIC24-master/DAQ_RTOS.X/src/taskBlinky.c</file>
         </group>
     </open-files>

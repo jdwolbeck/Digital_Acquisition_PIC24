@@ -38,7 +38,7 @@ void execute_command(void)
     }
     else if(strcmp(RXstring,"tmroff") == 0)
     {
-        t_count = 0;
+        tmr_enable = false;
         LedYellow_Off();
     }
     else if(strcmp(RXstring,"tmrs") == 0)
@@ -110,6 +110,7 @@ void execute_number(void)
         if(num >= 0 && num <= 100000)
         {
             LedYellow_On();
+            tmr_enable = true;
             t_count = (num * 10) + 1;
         }
     }

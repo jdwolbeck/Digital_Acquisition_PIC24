@@ -50,11 +50,11 @@ static portTASK_FUNCTION(vTimerTask, pvParameters)
     //===========================================
     while(1)
     {
-        if(t_count == 1)
+        if((tmr_enable == 1) && (t_count == 1))
         {
             LedYellow_Off();
         }
-        else if(t_count != 0)
+        else if((tmr_enable == 1) && (t_count != 0))
         {
             vTaskDelay(48);
             t_count = t_count - 1;

@@ -46,6 +46,7 @@ int wait_ms = 500;
 int t_count = 0;
 bool number_input = false;
 bool pwm_enable = false;
+bool tmr_enable = false;
 char command_string[20];
 int main( void )
 {

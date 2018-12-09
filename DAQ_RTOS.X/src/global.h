@@ -8,3 +8,4 @@ extern char RXstring[];
 extern bool number_input;
 extern char command_string[10];
 extern bool pwm_enable;
+extern bool tmr_enable;
